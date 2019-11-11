@@ -147,4 +147,4 @@ fetchunl() {
 }
 
 # Source everything in the "scripts" directory.
-source ~/scripts/*;
+source ~/scripts/*.sh;
