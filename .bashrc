@@ -151,3 +151,7 @@ source ~/scripts/*.sh;
 
 # Get the weather.
 alias wthr="curl http://wttr.in/Lincoln?m"
+
+# Make it easier to use the TMA-16 and the assembler for it.
+alias tma16="$HOME/tma-16/tma-16-rs/target/release/tma-16-rs"
+alias tmasm="python3 ~/tma-16/tma_16_assembler.py"

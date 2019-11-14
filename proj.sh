@@ -14,7 +14,9 @@ proj() {
         if [[ -n $2 ]]; then
             # file handle for the project's language specified?
             if [[ -n $3 ]]; then
-                mkdir $2;
+                if [[ ! -d $2 ]]; then
+                    mkdir $2;
+                fi
                 cd $2;
                 mkdir src;
                 mkdir doc;
