@@ -148,3 +148,6 @@ fetchunl() {
 
 # Source everything in the "scripts" directory.
 source ~/scripts/*.sh;
+
+# Get the weather.
+alias wthr="curl http://wttr.in/Lincoln?m"
