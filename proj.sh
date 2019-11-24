@@ -21,7 +21,7 @@ proj() {
                 mkdir src;
                 mkdir doc;
                 wget -O LICENSE https://www.gnu.org/licenses/gpl-3.0.txt;
-                printf "# %s\n\nLicensed under GNU GPL 3.0" $2 > readme.md;
+                printf "# %s\n\nLicensed under GNU GPL 3.0" $2 > readme.txt;
                 if [[ $3 == "sh" || $3 == "py" ]]; then
                     open_com="#";
                     close_com="";
