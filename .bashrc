@@ -132,7 +132,7 @@ duck() {
 }
 
 # Alias to ensure Nano uses my preferred settings.
-alias nano="nano -b -M --fill=64 -S -l -L -ET4"
+alias nano="nano -b -M --fill=60 -S -l -L -ET4"
 
 # Alias to ensure Shed shows byte indices in hexadecimal.
 alias shed="shed -H"
