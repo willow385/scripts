@@ -131,8 +131,8 @@ duck() {
     links "duckduckgo.com/lite/search?q=$url";
 }
 
-# Alias to ensure Nano converts tabs to spaces.
-alias nano="nano -ET4"
+# Alias to ensure Nano uses my preferred settings.
+alias nano="nano -b --fill=64 -S -l -L -ET4"
 
 # Alias to ensure Shed shows byte indices in hexadecimal.
 alias shed="shed -H"
