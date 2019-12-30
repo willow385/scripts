@@ -122,7 +122,7 @@ setfont ~/trig_fighters_videogame/hackerman.psf
 alias unl='ssh dfalzone@cse.unl.edu'
 
 # Do this each time I open a shell.
-fortune | cowsay -n
+fortune | cowsay -W60
 
 alias rotate="python3 ~/portraits/rotate.py"
 
