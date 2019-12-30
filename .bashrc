@@ -116,8 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-setfont ~/trig_fighters_videogame/hackerman.psf
-
 # An alias for logging in to the school server because I do it so often.
 alias unl='ssh dfalzone@cse.unl.edu'
 
