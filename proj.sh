@@ -38,7 +38,7 @@ proj() {
                 if [[ $3 == "sh" || $3 == "py" || $3 == "asm" ]]; then
                     printf "\
 $open_com          main.$3 file of $2\n\
-$open_com    Copyright (C) 2019  Dante Falzone\n\
+$open_com    Copyright (C) 2020  Dante Falzone\n\
 $open_com\n\
 $open_com    This program is free software: you can redistribute it and/or modify\n\
 $open_com    it under the terms of the GNU General Public License as published by\n\
