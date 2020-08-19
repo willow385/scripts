@@ -1,0 +1,84 @@
+blerp
+
+    BLERP(1)                        User Commands                         BLERP(1)
+
+    NAME
+            blerp
+
+    SYNOPSIS
+            blerp {[ OPTION | ARGS ]...[ ARGS ... -f [FLAGS] ...}
+            blerp {... DIRECTORY ... URL | BLERP} OPTIONS ] -{}
+
+    DESCRIPTION
+            blerp  filters local or  remote  files  or resources  using  patterns
+            defined by arguments and environment variables.  This behavior can be
+            altered by various flags.
+
+    OPTIONS
+            -a      Attack mode
+
+            -b      Suppress bees
+
+            -—      Flags use em dashes
+
+            -c      Count number of arguments
+
+            -d      Pipes output to DEBUG.EXE
+
+            -D      Deprecated
+
+            -e      Execute something
+
+            -f      Fun mode
+
+            -g      Use Google
+
+            -h      Check whether input halts
+
+            -i      Ignore case (lower)
+
+            -I      Ignore case (upper)
+
+            -jk     Kidding
+
+            -n      Behavior not defined
+
+            -o      Overwrite
+
+            -O      Opposite day
+
+            -p      Set true Pope; accepts "rome" or "avignon"
+
+            -q      Quiet  mode;  output is  printed  to  stdout instead of being
+                    spoken aloud
+
+            -r      Randomize arguments
+
+            -R      Run recursively on http://*
+
+            -s      Follow symbolic links symbolically
+
+            -S      Stealth mode
+
+            -t      Tumble dry
+
+            -u      UTF-8 mode; otherwise defaults to ANSEL
+
+            -U      Update (default: Facebook)
+
+            -v      Verbose; alias to `find / -exec cat {}`
+
+            -V      Set version number
+
+            -y      Yikes
+
+    SEE ALSO
+            blerp(1), blerp(3), blirb(8), blarb(51) blorp(501)(c)(3)
+
+    BUG REPORTS
+            http://www.inaturalist.org/taxa/47744-Hemiptera
+
+    COPYRIGHT
+            GPL(2)(3+) CC-BY/5.0 RV 41.0 like Gecko/BSD 4(2) or best offer
+
+    XKCD #1692                           June 2016                        BLERP(1)
