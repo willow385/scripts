@@ -61,5 +61,3 @@ function cmdc {
 
 # Alias to output readable Assembly
 alias gccasm="gcc -g -masm=intel -S -fverbose-asm"
-export AWS_ACCESS_KEY_ID=AKIAXTOWQK246GBMGJ74
-export AWS_SECRET_ACCESS_KEY="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"
