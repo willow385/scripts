@@ -1,0 +1,17 @@
+## MPL syntax highlighting
+
+syntax "MPL" "\.mpl$"
+comment "#"
+
+color brightmagenta "\<(start|end|print|int|float|string|if|else|while|for)\>"
+color brightmagenta "\<(return)\>"
+color normal "[.:;,+*-/|=!<>&%]"
+color yellow "[0-9]" "0x[0-9A-Fa-f]"
+color yellow "([0-9]|[0-9]+)\.([0-9]|[0-9]+)"
+color yellow "[A-Za-z_]([0-9A-Za-z_]+)?\("
+color brightcyan "funct[[:space:]]+[A-Za-z_]([0-9A-Za-z_]+)?\("
+color normal "\("
+color brightmagenta "\<(funct)\>"
+color brightgreen ""(\\.|[^"])*""
+color brightblack "#.*"
+color ,green "[[:space:]]+$"

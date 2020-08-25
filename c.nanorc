@@ -1,0 +1,39 @@
+## Here is an example for C/C++.
+##
+syntax "C" "\.(c(c|pp|xx)?|C)$" "\.(h(h|pp|xx)?|H)$" "\.ii?$" "\.(def)$" "\.ino"
+magic "^(C|C\+\+) (source|program)"
+comment "//"
+color yellow "[0-9]" "0x[0-9A-Fa-f]"
+color normal "[A-Za-z_]" "[A-Za-z_][0-9A-Za-z_]+(&|\*|:|\s)"
+color red "(\.|->)[0-9A-Za-z_]+"
+color normal "\." "->"
+color yellow "([0-9]|[0-9]+)\.([0-9]|[0-9]+)"
+color yellow "[0-9A-Za-z_]+\("
+color brightcyan "[0-9A-Za-z_]+[[:space:]]+[:0-9A-Za-z_]+\("
+color brightcyan "\*((\s)?)+[0-9A-Za-z_]+\("
+color normal "\(" "\*"
+color brightmagenta "\<(float|double|bool|char|wchar_t|int|short|long|sizeof|enum|void|static|const|struct|union|typedef|extern|(un)?signed|inline)\>"
+color brightmagenta "\<((s?size)|(char(16|32))|((u_?)?int(_fast|_least)?(8|16|32|64))|u?int(max|ptr))_t\>"
+color brightmagenta "\<(class|namespace|template|public|protected|private|typename|this|friend|virtual|using|mutable|volatile|register|explicit)\>"
+color brightmagenta "\<(for|if|while|do|else|case|default|switch)\>"
+color brightmagenta "\<(try|throw|catch|operator|new|delete)\>"
+color brightmagenta "\<((const|dynamic|reinterpret|static)_cast)\>"
+color brightmagenta "\<(alignas|alignof|asm|auto|compl|concept|constexpr|decltype|export|noexcept|nullptr|requires|static_assert|thread_local|typeid|override|final)\>"
+color brightmagenta "\<(goto|continue|break|return)\>"
+color brightmagenta "\<(define|include|(un|ifn?)def|endif|el(if|se)|if|warning|error)\>"
+color yellow "'([^'\]|(\\["'abfnrtv\\]))'" "'\\(([0-3]?[0-7]{1,2}))'" "'\\x[0-9A-Fa-f]{1,2}'"
+
+##
+## String highlighting.  You will in general want your comments and
+## strings to come last, because syntax highlighting rules will be
+## applied in the order they are read in.
+color green "<[^= 	]*>" ""(\\.|[^"])*""
+
+color yellow "%(\#|(0-+))?(hh|h|l|ll|q|L|j|z|Z|t)?[A-Za-z]" "%%"
+
+## Comment highlighting
+color brightblack "//.*"
+color brightblack start="/\*" end="\*/"
+
+## Trailing whitespace
+color ,green "[[:space:]]+$"
