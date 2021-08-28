@@ -120,7 +120,7 @@ fi
 alias unl='ssh dfalzone@cse.unl.edu'
 
 # Do this each time I open a shell.
-fortune | cowsay -W60
+fortune 40% psych 20% fortunes 20% literature 20% riddles | cowsay -W60 | lolcat -s 50 -p 0.5
 
 alias rotate="python3 ~/portraits/rotate.py"
 
@@ -130,7 +130,7 @@ duck() {
 }
 
 # Alias to ensure Nano uses my preferred settings.
-alias nano="nano -b -M --fill=60 --guidestripe=60 -l -L -ET4"
+alias nano="nano -b -M --guidestripe=100 -l -L -ET4 --nowrap"
 
 # Alias to ensure Shed shows byte indices in hexadecimal.
 alias shed="shed -H"
@@ -139,6 +139,7 @@ alias ycom="links https://news.ycombinator.com/news"
 alias tuir="tuir --ascii"
 
 # Alias for copying my files from the school server to localhost.
+# TODO change from UNL to Metro
 fetchunl() {
     filepath=$1;
     scp -r dfalzone@cse.unl.edu:/home/ugrad/dfalzone/$filepath/ cse.unl;
@@ -148,8 +149,45 @@ fetchunl() {
 source ~/scripts/*.sh;
 
 # Get the weather.
-alias wthr="curl http://wttr.in/Lincoln?m"
+alias wthr="curl http://wttr.in/Omaha?f"
 
 # Make it easier to use the TMA-16 and the assembler for it.
 alias tma16="$HOME/tma-16/tma-16-rs/target/release/tma-16-rs"
 alias tmasm="python3 ~/tma-16/tma_16_assembler.py"
+alias python3="python3.8"
+alias python="python3"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/claire/.local/bin:"
+
+alias tetris="tint"
+
+alias linux="python3 ~/linux.py"
+
+mardoc() {
+    filename=$1;
+    python3 ~/marain/mardoc.py $filename > $filename.html;
+    firefox $filename.html;
+#    rm $filename.html;
+}
+
+alias cd70="cd ~/Downloads/That\ 70\'s\ Show/"
+
+gits() {
+    git add --all;
+    git commit -m "$1";
+    git push origin master;
+}
+
+alias mpl="python3 ~/ncndi/mpl_interpreter.py"
+
+export MUSICPATH="/media/claire/music"
+
+# Function to quickly view a webpage with no frills.
+function qbrowse {
+    curl "$1" 2> /dev/null | pandoc -f html -t plain | less;
+}
+
+alias vlc="vlc 2> /dev/null"
+
+function ytdl {
+    youtube-dl -x --audio-format mp3 "$1";
+}
